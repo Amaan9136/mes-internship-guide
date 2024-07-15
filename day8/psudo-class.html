@@ -4,19 +4,21 @@
     color: white;
     padding: 8px 12px;
     border: none;
-    cursor: grab;
+    cursor: pointer;
   }
 
   .btn:hover{
     background-color: blue;
     border-radius: 10px;
     transform: translateX(5px);
-    transition: all 0.3s;
+    transition: background-color 3s,border-radius 5s;
   }
 
-  .btn:active{
-    cursor: grabbing;
+  .btn:focus{
+    cursor: crosshair;
   }
+
 </style>
 
 <button class="btn" draggable="true">Click Me!</button>
+<p>Lorem ipsum dolor sit amet.</p>

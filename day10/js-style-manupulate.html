@@ -1,0 +1,14 @@
+<p id="text" style="color: red;">Lorem ipsum dolor sit amet.</p>
+<button onclick="changeColor('blue')">Blue</button>
+<button onclick="changeColor('red')">red</button>
+<button onclick="changeColor('yellow')">yellow</button>
+<button onclick="changeColor('green')">green</button>
+<button onclick="changeColor('gray')">gray</button>
+
+<script>
+  var text = document.getElementById("text")
+  function changeColor(mycolor) {
+    text.style.color = mycolor
+  }
+
+</script>

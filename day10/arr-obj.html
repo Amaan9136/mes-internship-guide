@@ -1,0 +1,31 @@
+<script>
+  var arr = [1, 8, 5]
+  var obj = {
+    name: "Abhi",
+    age: 22
+  }
+
+  var person1 = { name: "Abhi", age: 22 }
+  var person2 = { name: "Amaan", age: 22 }
+  var person3 = { name: "Kaushik", age: 22 }
+  var person4 = { name: "Abdul", age: 22 }
+
+  var human = [person1, person2, person3, person4]
+
+  // for loop
+  for (i = 0; i < human.length; i++) {
+    console.log(human[i].name);
+    console.log(human[i].age);
+  }
+
+  // for each
+  human.forEach(person => {
+    console.log(person.name)
+    console.log(person.age)
+  });
+
+
+  // console.log(arr[2]);
+  // console.log(person.age);
+
+</script>

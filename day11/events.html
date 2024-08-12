@@ -1,0 +1,19 @@
+<p id="text">Lorem ipsum dolor sit amet.</p>
+<button id="btn">Hide Paragraph</button>
+
+<script>
+  
+  var text = document.getElementById("text")
+  var btn = document.getElementById("btn")
+  function hide() {
+      text.style.display = "none"
+  }
+  function show() {
+      text.style.display = "block"
+  }
+
+  btn.addEventListener("mouseenter",hide)
+  btn.addEventListener("mouseleave",show)
+
+
+</script>

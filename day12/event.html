@@ -1,0 +1,12 @@
+<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, cumque.</p>
+<button id="btn">Change Color</button>
+<script>
+  var para = document.getElementById("para")
+  var btn = document.getElementById("btn")
+
+  function ChangeColor() {
+    para.style.color = 'red'
+  }
+
+  btn.addEventListener("mouseenter",ChangeColor)
+</script>

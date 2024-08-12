@@ -1,0 +1,42 @@
+*{
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+.list{
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  color: rgb(137, 159, 162);
+}
+.main{
+  display: flex;
+}
+.sidebar{
+  position: fixed;
+  background-color: black;
+  width: 20vw;
+}
+.content{
+  margin-left: 20vw;
+  width: 100vw;
+}
+.cards{
+  display: flex;
+  border: solid 2px black;
+}
+.card-content{
+  margin-left: 20px;
+}
+.main,.sidebar{
+  height: 100vh;
+  border: solid 1px red;
+}
+.content{
+  overflow-y: auto;
+  /* z-index: 1; */
+}

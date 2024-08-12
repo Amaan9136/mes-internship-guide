@@ -1,0 +1,30 @@
+<style>
+  .myimg:hover{
+    transform: rotateY(100deg);
+    opacity: 0.5;
+    transition: all 3s;
+  }
+</style>
+
+<p class="myimg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, beatae laborum voluptas reprehenderit et deleniti exercitationem facere voluptatem deserunt perferendis quam dolore esse consequuntur blanditiis quos obcaecati illum eligendi sed.</p>
+
+<img id="myimg" src="5.jpg" width="300px" class="myimg" alt="">
+
+<script>
+  var myimg = document.getElementById("myimg")
+  var imgs = ['5.jpg', '4.jpeg' ,'3.jpeg', '2.jpeg' ,'1.jpg']
+  var index = 0
+  function changeImg() {
+    if(index==imgs.length){
+      index = 0
+    }
+    myimg.src = imgs[index]
+    index++
+  }
+  
+  setInterval(() => {
+    changeImg()
+    imgs.classList = 'myimg'
+  }, 3000);
+  imgs.classList = ''
+</script>
